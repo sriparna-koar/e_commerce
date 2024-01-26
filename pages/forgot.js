@@ -2,20 +2,20 @@ import React from 'react'
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-c
+import Image from 'next/image';
 const Forgot = () => {
     const router=useRouter()
     useEffect(()=>{
         if(localStorage.getItem('token')){
             router.push('/')
         }
-    },[])
+    },[router])
     return (
         <div>
           <section className="bg-gray-50 dark:bg-gray-900">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-              <img className="w-8 h-8 mr-2" src="https://t3.ftcdn.net/jpg/04/43/81/00/240_F_443810023_0AHMCATZoRoTGLgIHPHHun3ofhQPZ19p.jpg" alt="logo"/>
+              <Image className="w-8 h-8 mr-2" src="https://t3.ftcdn.net/jpg/04/43/81/00/240_F_443810023_0AHMCATZoRoTGLgIHPHHun3ofhQPZ19p.jpg" alt="logo"/>
               Anonymous Brand
           </a>
          
@@ -24,7 +24,7 @@ const Forgot = () => {
                   <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
        Forgot Password
                   </h1>
-                  <Link href={'/signup'}><p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                  <Link href={'/signup'} passHref><p className="text-sm font-light text-gray-500 dark:text-gray-400">
                           After confirming password... <a href="#" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Login</a>
                       </p>
                       </Link> 

@@ -9,7 +9,7 @@ const Orders = () => {
     if (! localStorage.getItem('token')) {
       router.push('/');
     }
-  }, []);
+  }, [router]);
   return (
     
     <div>
@@ -48,7 +48,7 @@ const Orders = () => {
                   scope="row"
                   className="px-6 py-4 font-medium text-faa307-900 whitespace-nowrap "
                 >
-                  Apple MacBook Pro 17"
+                  Apple MacBook Pro 17
                 </th>
                 <td className="px-6 py-4">Silver</td>
                 <td className="px-6 py-4">Laptop</td>

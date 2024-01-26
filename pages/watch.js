@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import product from "../models/product";
 import mongoose from "mongoose";
-
+import Image from 'next/image';
 const Tshirt = ({ products }) => {
   return (
     <div>
@@ -15,7 +15,7 @@ const Tshirt = ({ products }) => {
                   <Link passHref={true} key={item._id} href={`/product/${item.slug}`}>
                     <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
                       <a className="block relative  rounded overflow-hidden">
-                        <img
+                        <Image
                           alt="ecommerce"
                           className="m-auto  h-[30vh] md:h-[16vh] block"
                           src={item.img}

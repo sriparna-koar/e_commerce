@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Image from 'next/image';
 export default function Home() {
   return (
     <div >
@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
    
       <div>
-        <img src="/home.jpg" alt="" className="w-full h-auto"/>
+        <Image src="/home.jpg" alt="" className="w-full h-auto"/>
       </div>
   
       <section className="text-gray-600 body-font">

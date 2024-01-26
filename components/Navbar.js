@@ -72,14 +72,14 @@ const Navbar = ({user,logout,cart,addTocart,removeFromcart,clearcart,subtotal}) 
      {dropdown && <div onMouseOver={()=>{setdropdown(true)}} onMouseLeave={()=>{setdropdown(false)}} 
      className="absolute right-8 rounded-md top-6 py-4 bg-yellow-300 px-5 w-32">
         <ul>
-       <Link href={'/myaccount'}><a><li className="py-1 hover:text-yellow-600 text-sm font-bold">My Account</li></a></Link>
-       <Link href={'/orders'}><a><li className="py-1 hover:text-yellow-600 text-sm font-bold">Orders</li></a></Link>
+       <Link href={'/myaccount'} passHref><a><li className="py-1 hover:text-yellow-600 text-sm font-bold">My Account</li></a></Link>
+       <Link href={'/orders'} passHref><a><li className="py-1 hover:text-yellow-600 text-sm font-bold">Orders</li></a></Link>
      <li onClick={logout} className="py-1 hover:text-yellow-600 text-sm font-bold">Logout</li>
         </ul>
       </div>}
       {user.value && <MdAccountCircle className="text-xl md:text-3xl"/>}
       </span>
-  {!user.value && <Link href={'/login'}><a>
+  {!user.value && <Link href={'/login'} passHref><a>
 <button className="bg-yellow-600 px-2 py-1 rounded-md text-sm text-white mx-2">Login</button>
     </a>
   </Link>}
@@ -118,7 +118,7 @@ const Navbar = ({user,logout,cart,addTocart,removeFromcart,clearcart,subtotal}) 
         </ol>
         <div className="font-bold my-2">Total:{subtotal}</div>
         <div className="flex">
-        <Link href={'/checkout'}>
+        <Link href={'/checkout'} passHref>
   
     <button className="flex mx-auto mr-2 text-black bg-yellow-500 border-0 py-2 px-2 focus:outline-none hover:bg-yellow-300 rounded text-lg">
       <BsFillBagCheckFill className="m-1" /> Checkout Items

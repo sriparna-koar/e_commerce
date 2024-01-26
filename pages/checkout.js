@@ -32,16 +32,31 @@ const Checkout = ({ cart, subtotal, addTocart, removeFromcart }) => {
     else if (e.target.name == "city") {
       setcity(e.target.value);
     }
-    setTimeout(()=>{
+  //   setTimeout(()=>{
 
    
-    if(name.length>3 && email.length>3 && phone.length>3 && pincode.length>3 && address.length>3 && state.length.length>3 && city.length.length>3 ){
-      setdisabled(false)
+  //   if(name.length>3 && email.length>3 && phone.length>3 && pincode.length>3 && address.length>3 && state.length.length> 3 && city.length.length> 3 ){
+  //     setdisabled(false)
+  //   }
+  //   else{
+  //     setdisabled(true)
+  //   }
+  // });
+  setTimeout(() => {
+    if (
+      name.length > 3 &&
+      email.length > 3 &&
+      phone.length > 3 &&
+      pincode.length > 3 &&
+      address.length > 3 &&
+      state.length > 3 &&  // Fix: Remove extra "length" here
+      city.length > 3     // Fix: Remove extra "length" here
+    ) {
+      setdisabled(false);
+    } else {
+      setdisabled(true);
     }
-    else{
-      setdisabled(true)
-    }
-  });
+  }, 0);
   };
   // const initiatePayment= async()=>{
   //   let oid=Math.floor(Math.random() * Date.now());
@@ -205,7 +220,7 @@ const Checkout = ({ cart, subtotal, addTocart, removeFromcart }) => {
           <textarea onChange={handleChange} value={address}
             name="address"
             id="address"
-            col="20"
+            cols="20"
             rows="2"
             className="w-full bg-white rounded border  border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-6 leading-8 transition-colors duration-200 ease-in-out "
           ></textarea>
@@ -334,7 +349,7 @@ const Checkout = ({ cart, subtotal, addTocart, removeFromcart }) => {
         <span className="font-bold">Total:₹{subtotal}</span>
       </div>
       <div className="mx-4">
-        <Link href={"/checkout"}>
+        <Link href={"/checkout"} passHref>
           <button
             disabled={disabled}
             onClick={initiatePayment}

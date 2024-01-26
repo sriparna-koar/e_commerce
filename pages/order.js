@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 const Order = () => {
   return (
     <div>
@@ -10,11 +10,11 @@ const Order = () => {
       <p className="leading-relaxed font-medium   mb-4">Order Successfully Placed!!</p>
         <h2 className="text-sm title-font text-gray-500 tracking-widest">Anonymous Brand</h2>
         <h1 className="text-gray-900 text-3xl title-font font-medium mb-4">Order Id:#723018</h1>
-        <div class="flex mb-4">
-          <a class="flex-grow text-center py-2 text-lg px-1">Description</a>
-          <a class="flex-grow text-center border-gray-300 py-2 text-lg px-1">Color</a>
-          <a class="flex-grow text-center border-gray-300 py-2 text-lg px-1">Amount</a>
-          <a class="flex-grow text-center border-gray-300 py-2 text-lg px-1">Quantity</a>
+        <div className="flex mb-4">
+          <a className="flex-grow text-center py-2 text-lg px-1">Description</a>
+          <a className="flex-grow text-center border-gray-300 py-2 text-lg px-1">Color</a>
+          <a className="flex-grow text-center border-gray-300 py-2 text-lg px-1">Amount</a>
+          <a className="flex-grow text-center border-gray-300 py-2 text-lg px-1">Quantity</a>
         </div>
 
         <div className="flex border-t border-gray-200 py-2">
@@ -42,7 +42,7 @@ const Order = () => {
           </div>
         </div>
       </div>
-      <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400"/>
+      <Image alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="https://dummyimage.com/400x400"/>
     </div>
   </div>
 </section>

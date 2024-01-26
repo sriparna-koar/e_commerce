@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import product from "../models/product";
 import mongoose from "mongoose";
-import Image from 'next/image';
+
 const Tshirt = ({ products }) => {
   return (
     <div>
@@ -15,7 +15,7 @@ const Tshirt = ({ products }) => {
                   <Link passHref={true} key={item._id} href={`/product/${item.slug}`}>
                     <div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
                       <a className="block relative  rounded overflow-hidden">
-                        <Image
+                        <img
                           alt="ecommerce"
                           className="m-auto  h-[30vh] md:h-[16vh] block"
                           src={item.img}
@@ -40,7 +40,7 @@ const Tshirt = ({ products }) => {
             })}
             {/* <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
 <a className="block relative  rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/images/I/61rZrS+YbaL._SX679_.jpg"/>
+          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/imgs/I/61rZrS+YbaL._SX679_.jpg"/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -51,7 +51,7 @@ const Tshirt = ({ products }) => {
       </Link>
       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
         <a className="block relative  rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/images/I/41wiYF9N1gL._SX300_SY300_QL70_FMwebp_.jpg"/>
+          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/imgs/I/41wiYF9N1gL._SX300_SY300_QL70_FMwebp_.jpg"/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -62,7 +62,7 @@ const Tshirt = ({ products }) => {
       </Link>
       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
         <a className="block relative  rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/images/I/71zXL4hqUyL._SX679_.jpg"/>
+          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/imgs/I/71zXL4hqUyL._SX679_.jpg"/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -73,7 +73,7 @@ const Tshirt = ({ products }) => {
       </Link>
       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
         <a className="block relative  rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/images/I/71xQq6cAhGL._SY879_.jpg"/>
+          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/imgs/I/71xQq6cAhGL._SY879_.jpg"/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -84,7 +84,7 @@ const Tshirt = ({ products }) => {
       </Link>
       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
         <a className="block relative  rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/images/I/719wzn0TOlL._SY879_.jpg"/>
+          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/imgs/I/719wzn0TOlL._SY879_.jpg"/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -96,7 +96,7 @@ const Tshirt = ({ products }) => {
   
       <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
         <a className="block relative  rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/images/I/61NL684XQcL._SX679_.jpg"/>
+          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/imgs/I/61NL684XQcL._SX679_.jpg"/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -107,7 +107,7 @@ const Tshirt = ({ products }) => {
 </Link>
 <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
         <a className="block relative  rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/images/I/71GKSim4XrL._AC_UL480_FMwebp_QL65_.jpg"/>
+          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/imgs/I/71GKSim4XrL._AC_UL480_FMwebp_QL65_.jpg"/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -118,7 +118,7 @@ const Tshirt = ({ products }) => {
     </Link>
     <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
         <a className="block relative  rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/images/I/51JvQkZW5ML._SX679_.jpg"/>
+          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/imgs/I/51JvQkZW5ML._SX679_.jpg"/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -129,7 +129,7 @@ const Tshirt = ({ products }) => {
     </Link>
     <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
         <a className="block relative  rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/images/I/41ySRhErmUL._SX300_SY300_QL70_FMwebp_.jpg"/>
+          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/imgs/I/41ySRhErmUL._SX300_SY300_QL70_FMwebp_.jpg"/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -140,7 +140,7 @@ const Tshirt = ({ products }) => {
     </Link>
     <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
         <a className="block relative  rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/images/I/51w6VCsZ6GL._SX300_SY300_QL70_FMwebp_.jpg"/>
+          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/imgs/I/51w6VCsZ6GL._SX300_SY300_QL70_FMwebp_.jpg"/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
@@ -151,7 +151,7 @@ const Tshirt = ({ products }) => {
     </Link>
     <Link href={'/product/wear-the-code'}><div className="lg:w-1/4 md:w-1/2 p-4 w-full cursor-pointer shadow-lg">
         <a className="block relative  rounded overflow-hidden">
-          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/images/I/71AxLdT5lJL._SY450_.jpg"/>
+          <img alt="ecommerce" className="m-auto  h-[30vh] md:h-[16vh] block" src="https://m.media-amazon.com/imgs/I/71AxLdT5lJL._SY450_.jpg"/>
         </a>
         <div className="mt-4 text-center">
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>

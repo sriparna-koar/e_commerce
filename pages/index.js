@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
    
       <div>
-        <Image src="/home.jpg" alt="" className="w-full h-auto"/>
+        <img src="/home.jpg" alt="" className="w-full h-auto"/>
       </div>
   
       <section className="text-gray-600 body-font">
